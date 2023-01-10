@@ -1,0 +1,88 @@
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 0.5rem 2.5rem;
+    background: #7749F8;
+    color: white;
+}
+
+main {
+    padding: 3rem 2.5rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 15rem;
+}
+
+form *:not(button) {
+    font: inherit;
+    padding: 0.5rem 0.75rem;
+}
+
+form textarea {
+    resize: none;
+}
+
+.todo__add {
+    padding: 0.5rem 0.75rem;
+    max-width: fit-content;
+    background: #7749F8;
+    color: white;
+    border-radius: 0.25rem;
+    border: none;
+    font-weight: bold;
+}
+
+.column-container {
+    flex: 1;
+}
+
+.column-container h2{
+    margin: 0;
+}
+
+.card-column {
+    border: 1px solid #DEE2E6;
+    height: 70vh;
+    padding: 0;
+    list-style: none;
+}
+
+.todo__item {
+    background: #FFFFFF;
+    border: 0.1rem solid #DEE2E6;
+    padding: 0.5rem 1rem;
+}
+
+.todo__item * {
+    margin: 0.5rem 0;
+}
+
+.todo__item > * {
+    pointer-events: none;
+}
+
+.arrow-btn {
+    background-color: transparent;
+    cursor: pointer;
+    align-self: center;
+    border-width: 1px;
+}
+
+.selected {
+    color: #FFFFFF;
+    background: #7749F8;
+}
+
+.done .todo__item {
+    color: black;
+    background: #28a745;
+}

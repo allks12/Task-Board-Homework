@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task App</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Simple Task board</h1>
+  </header>
+
+  <main>
+    <form class="todo__header">
+      <input id="title" type="text" placeholder="Task title" />
+      <textarea name="description" id="description" cols="30" rows="5" placeholder="Description"></textarea>
+      <button class="todo__add">Create</button>
+    </form>
+    <div class="column-container">
+      <h2>To Do</h2>
+      <ul class="card-column todo"></ul>
+    </div>
+    <button id="move-to-in-progress" class="arrow-btn">></button>
+    <div class="column-container">
+      <h2>In Progress</h2>
+      <ul class="card-column in-progress"></ul>
+    </div>
+    <button id="move-to-finished" class="arrow-btn">></button>
+    <div class="column-container">
+      <h2>Done</h2>
+      <ul class="card-column done"></ul>
+    </div>
+  </main>
+</body>
+
+</html>
